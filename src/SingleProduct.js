@@ -3,7 +3,7 @@ import styled from "styled-components";
 import React from "react";
 
 const SingleProduct = () => {
-  return <Wrapper></Wrapper>;
+  return <Wrapper>Signle Product</Wrapper>;
 };
 
 const Wrapper = styled.section`

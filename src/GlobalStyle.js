@@ -21,6 +21,8 @@ body {
   overflow-x: hidden;
    scrollbar-color: rgb(98 84 243);
     scrollbar-width: thin;
+    min-height: 100vh;
+    max-width: 100vw;
 }
 
 body::-webkit-scrollbar {
@@ -47,8 +49,7 @@ h4 {
 
 }
 
-${
-  "" /* h1 {
+h1 {
   color: ${({ theme }) => theme.colors.heading};
   font-size: 6rem;
   font-weight: 900;
@@ -59,8 +60,6 @@ ${
    font-size: 4.4rem;
    font-weight: 300;
    white-space: normal;
-  
-  } */
 }
 
 h3 {
@@ -68,13 +67,11 @@ h3 {
   font-weight: 400;
 }
 
-${
-  "" /* p, button {
+p, button {
   color: ${({ theme }) => theme.colors.text};
   font-size: 1.65rem;
   line-height: 1.5;
   font-weight:400;
-} */
 }
 
 a {
@@ -115,8 +112,7 @@ ${"" /* resuable code section  */}
   grid-template-columns: repeat(5, 1fr);
 }
 
-  ${
-    "" /* .common-heading {
+    .common-heading {
       font-size: 3.8rem;
       font-weight: 600;
       margin-bottom: 6rem;
@@ -129,7 +125,7 @@ ${"" /* resuable code section  */}
       color: #5138ee;
     }
 
-   .caption {
+    .caption {
       position: absolute;
       top: 15%;
       right: 10%;
@@ -160,10 +156,8 @@ input, textarea{
     text-transform: uppercase;
     font-size: 1.8rem;
     cursor: pointer;
-    } */
   }
-${
-  "" /* 
+{
 @media (max-width: ${({ theme }) => theme.media.tab}) {
     .container {
     max-width: 130rem;
@@ -182,7 +176,6 @@ ${
   .grid-two-column , .grid-three-column, .grid-four-column{
       grid-template-columns: 1fr;
     }
-} */
 }
-
+}
 `;
