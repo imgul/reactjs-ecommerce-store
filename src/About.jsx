@@ -1,17 +1,16 @@
-import { React, useContext } from "react";
 import HeroSection from "./components/HeroSection";
-import { AppContext } from "./context/productsContext";
+import { useProductContext } from "./context/productsContext";
 
 const About = () => {
-  const { author } = useContext(AppContext);
+  const { author } = useProductContext();
 
   const data = {
-    name: "Thapa Ecommerce",
+    name: "Gul Ecommerce",
   };
 
   return (
     <>
-      {author.name}
+      {`${author.name} ${author.address}`}
       <HeroSection myData={data} />
     </>
   );
